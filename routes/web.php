@@ -19,7 +19,9 @@ Route::get('/', 'IndexController@index')->name('index');
 Route::get('/checkout', 'IndexController@checkout')->name('checkout');
 Route::get('/product', 'IndexController@product')->name('product');
 Route::get('/allitem', 'IndexController@allitem')->name('allitem');
-Route::get('/admin', 'IndexController@admin')->name('admin');
+Route::get('/adminallitem', 'giayController@getall')->name('adminallitem');
+Route::get('/adminadditem', 'IndexController@adminadditem')->name('adminadditem');
+Route::post('/themgiay'			,'giayController@themgiay')		->name('themgiay');
 
 Auth::routes();
 

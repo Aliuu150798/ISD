@@ -19,6 +19,9 @@ class IndexController extends Controller
         return view('user.allitem');
     }
     public function admin(){
-        return view('admin.layout');
+        return view('admin.allitem');
+    }
+    public function adminadditem(){
+        return view('admin.adminadditem');
     }
 }
